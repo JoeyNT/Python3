@@ -32,4 +32,4 @@
  item3 = Item('beer','3.99')
  print('Price: $', Item.price(item1))
  item3 = Item('doritos','1.49')
- print('Price: $', Item.price(item1))I
+ print('Price: $', Item.price(item1))
