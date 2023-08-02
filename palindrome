@@ -11,8 +11,8 @@ def isPalindrome(text):
             return False
     text=(1,2,3,4,3,2,1)
     print(isPalindrome(text))
-#
-#
+
+
 courses_rooms = {'CS101':3004, 'CS102':4501, 'CS103':6755, 'NT110':1244, 'CM241':1411}
 courses_instructors = {'CS101':'Haynes', 'CS102':'Alvarado', 'CS103':'Rich', 
 'NT110':'Burke', 'CM241':'Lee'}
