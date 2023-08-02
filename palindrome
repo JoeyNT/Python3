@@ -1,0 +1,28 @@
+def isPalindrome(text):
+    if (len(text)==0):
+        return True
+    elif (len(text)==1):
+        return True
+    else:
+        length=len(text)
+        if(text[0]==text[length-1]and isPalindrome(text[1:length-1])):
+            return True
+        else:
+            return False
+    text=(1,2,3,4,3,2,1)
+    print(isPalindrome(text))
+#
+#
+courses_rooms = {'CS101':3004, 'CS102':4501, 'CS103':6755, 'NT110':1244, 'CM241':1411}
+courses_instructors = {'CS101':'Haynes', 'CS102':'Alvarado', 'CS103':'Rich', 
+'NT110':'Burke', 'CM241':'Lee'}
+courses_times = {'CS101':'8:00am', 'CS102':'9:00am', 'CS103':'10:00am', 'NT110':'11:00am', 
+'CM241':'1:00pm'}
+course = input('Enter a class name:')
+if course in courses_rooms:
+    print('Class:', course)
+    print('Room:', courses_rooms[course])
+    print('Instructor:', courses_instructors[course])
+    print('Time:', courses_times[course])
+else:
+    print('Invalid course number.')
